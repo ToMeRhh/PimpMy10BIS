@@ -1,6 +1,6 @@
 (function() {
     imgs = document.getElementsByTagName("img");
-    for (i = 0; i < imgs.length; i++) {
+    for (i = 0; i <= imgs.length; i++) {
         if (imgs[i].getAttribute("src") != "Images/block32.png") continue;
         str = imgs[i].parentNode.getAttribute("onmouseover");
         str = str.substring(str.indexOf("$('#") + 4, str.indexOf("').show"));
